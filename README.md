@@ -11,9 +11,9 @@ SilexJS.App.get('/user/{id}', function (request, model) {
 
   var user = model.getUser(request.GET.id);
   if (user === null) {
-    return [error, Silex.HTTP.404];
+    return ['User not found', Silex.HTTP.NOT_FOUND];
   } else {
-    return user;
+    return [user, Silex.HTTP.OK];
   }
 
 });
