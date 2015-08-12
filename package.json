@@ -1,0 +1,24 @@
+{
+  "name": "silex.js",
+  "version": "0.1.0",
+  "description": "A Node.js framework for building RESTful API's inspired by PHP's Silex.",
+  "main": "./lib/silex.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomasperezv/silex.js.git"
+  },
+  "keywords": [
+    "node.js",
+    "REST",
+    "RESTFul"
+  ],
+  "author": "Tomás Pérez <tom@0x101.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomasperezv/silex.js/issues"
+  },
+  "homepage": "https://github.com/tomasperezv/silex.js"
+}
