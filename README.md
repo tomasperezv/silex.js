@@ -2,12 +2,12 @@
 A Node.js framework for building RESTful API's inspired by PHP's Silex.
 
 ```javascript
-var Silex = require('silex.js');
+var SilexJS = require('silex.js');
 
 /**
  * @route /user/{id}
  */
-Silex.App.get('/user/{id}', function (request, model) {
+SilexJS.App.get('/user/{id}', function (request, model) {
 
   var user = model.getUser(request.GET.id);
   if (user === null) {
@@ -18,5 +18,5 @@ Silex.App.get('/user/{id}', function (request, model) {
 
 });
 
-silex.run();
+SilexJS.run();
 ```
