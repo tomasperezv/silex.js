@@ -13,4 +13,25 @@ SilexJS.App.get('/hello/{name,a}', function (request) {
 
 });
 
+/**
+ * @route /async/
+ */
+SilexJS.App.get('/async/{}', function (request) {
+
+  var promise = new Promise(function(resolve, reject) {
+    var fs = require('fs');
+    fs.readdir('.', function(err, files) {
+      if (!err) {
+        resolve(files);
+      } else {
+        reject('file read operation failed');
+      }
+    });
+  });
+
+  return promise;
+
+});
+
+
 SilexJS.start();
