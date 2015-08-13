@@ -9,7 +9,7 @@ var SilexJS = require('silex.js');
  */
 SilexJS.App.get('/user/{id}', function (request, model) {
 
-  var user = model.getUser(request.GET.id);
+  var user = model.getUser(request.id);
   if (user === null) {
     return ['User not found', SilexJS.HTTP.NOT_FOUND];
   } else {
