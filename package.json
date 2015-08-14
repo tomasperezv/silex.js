@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/tomasperezv/silex.js/issues"
   },
-  "homepage": "https://github.com/tomasperezv/silex.js"
+  "homepage": "https://github.com/tomasperezv/silex.js",
+  "dependencies": {
+    "nodejs-websocket": "^1.2.1"
+  }
 }
