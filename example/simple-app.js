@@ -18,15 +18,18 @@ SilexJS.App.get('/hello/{name,a}', function (request) {
  */
 SilexJS.App.get('/async/', function (request) {
 
-  var promise = new Promise(function(resolve, reject) {
-    var fs = require('fs');
-    fs.readdir('.', function(err, files) {
-      if (!err) {
-        resolve(files);
-      } else {
-        reject('file read operation failed');
-      }
-    });
+  var Q = require('q');
+  var fs = require('fs');
+
+  var promise = Q.nfcall(fs.readdir, './lib/')
+  .then(function(dir) {
+    return [Q.nfcall(fs.readdir, './lib/core/'), dir];
+  })
+  .spread(function(finalDir, dir) {
+    return [finalDir, dir];
+  })
+  .fail(function(err) {
+    return err;
   });
 
   return promise;
