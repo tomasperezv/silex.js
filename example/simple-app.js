@@ -9,7 +9,7 @@ SilexJS.App.get('/hello/{name,a}', function (request) {
     'message': 'Hello ' + request.name + ' ' + request.a
   };
 
-  return [data, SilexJS.HTTP.OK];
+  return [data, SilexJS.HTTPCode.OK];
 
 });
 
