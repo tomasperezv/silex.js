@@ -1,7 +1,7 @@
 {
   "name": "silex.js",
   "version": "0.1.0",
-  "description": "A Node.js framework for building RESTful API's inspired by PHP's Silex.",
+  "description": "A Node.js framework for building RESTful API's.",
   "main": "./lib/silex.js",
   "scripts": {
     "test": "mocha"
