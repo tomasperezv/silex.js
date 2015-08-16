@@ -1,5 +1,6 @@
 # silex.js
-A Node.js framework for building RESTful API's inspired by PHP's Silex.
+A Node.js framework for building RESTful API's. 
+It suports Websockets and HTTP requests.
 
 ```javascript
 var SilexJS = require('silex.js');
