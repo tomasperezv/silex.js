@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/tomasperezv/silex.js",
   "dependencies": {
+    "mocha": "^2.2.5",
     "nodejs-websocket": "^1.2.1",
     "q": "^1.4.1"
   }
