@@ -12,9 +12,9 @@ SilexJS.App.get('/user/{id}', function (request, model) {
 
   var user = model.getUser(request.id);
   if (user === null) {
-    return ['User not found', SilexJS.HTTP.NOT_FOUND];
+    return ['User not found', SilexJS.HTTPCode.NOT_FOUND];
   } else {
-    return [user, SilexJS.HTTP.OK];
+    return [user, SilexJS.HTTPCode.OK];
   }
 
 });
