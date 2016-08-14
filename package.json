@@ -1,5 +1,5 @@
 {
-  "name": "silex.js",
+  "name": "@tomasperezv/silex.js",
   "version": "0.1.0",
   "description": "A Node.js framework for building RESTful API's.",
   "main": "./lib/silex.js",
@@ -15,7 +15,7 @@
     "REST",
     "RESTFul"
   ],
-  "author": "Tomás Pérez <tom@0x101.com>",
+  "author": "Tomás Pérez <t@0x101.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tomasperezv/silex.js/issues"
